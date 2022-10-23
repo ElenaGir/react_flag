@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "font-1";
+  src: url(../assets/fonts/AtkinsonHyperlegible-Regular.ttf);
+}
+
+$font-1: "font-1", sans-serif;
+
+$color-1: #fb61f8;
+$color-2: rgb(146, 250, 114);
+$color-3: #282c34;
+$white: rgb(243, 243, 243);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+body {
+  background: $white;
+  font-family: $font-1;
+  // @include verticalCenter;
+}
+li {
+  list-style-type: none;
+}
